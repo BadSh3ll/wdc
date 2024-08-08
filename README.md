@@ -1,10 +1,9 @@
-# WCPS library implementation and modifications on an already started library
+# WCPS library
 
 ## General setting
 
 Our tasks is to make an effective and convinient WCPS qeuery generator using functionality in Python. It is basically a Python library for this purpose. We can already imagine that we will need to pass certain parameters into relevant methods of some datacube object which should then send the composed qeueries to the provided server [Rasmadan](https://ows.rasdaman.org/) where they will be processed and returned.
 
-We were provided a code which was created by another team which we had to improve while trying to add even more functionalities.
 
 In order for our library to work we will be needing the following imports:
 
@@ -29,38 +28,8 @@ import urllib3
 urllib3.disable_warnings()
 ```
 
-# Modifications
-
-We will firstly talk about the modifications that we did, before commencing with the general description of the resulted library. We worked exclusively in the Sprint_2 folder and committed all of our additions and improvements in there.
-
 ## Documentation
-
-One of the first things that we did was restructuring the documentation. We created a README file, as the previous teams did the documentation exclusively in a Jupyter Notebook. We also added inline comments for the tests and functionalities so that the user will have a better understanding of the code. The initial documentation can be found here [initial documentation](docs.ipynb)
-
-## Test Cases
-
-We added a new test case class: TestDBC where we are testing the functionalities in the DBC class and we are having some perfomance tests.
-
-## DCO 
-
-We cleaned up some of the functions, for example: def executeMultVar(self), which had redundant operations and variables that weren't used further in the code.
-
-## DBC 
-
-Created a new functionalities for DBC such as get_subset_coverage(self, coverage_id:str, subsets:list, encode=None), def connection(self) and much more.
-
-## Retstructuring:
-
-We restructured the received code by creating a new folder for the tests and individual files for each set of tests. we also moved some files around, for examples `main.py` in to the parent folder so that it doesn't have to be run whenever the library is downloaded or used
-
-## Cleanup
-
-We cleaned up the initial library by deleting unnecessary files and functions.
-
-## Clean up
-
-We cleaned up the initial library by deleting the unnecessary files such as .eggs, pycaches and dist folder.
-
+The initial documentation can be found here [initial documentation](docs.ipynb)
 
 # General description
 
@@ -95,14 +64,6 @@ DCO class that can communicate with the WCPS server using the provided [URL](htt
 - Connection and requests to the Rasdaman server 
 - Data encoding (encoding results and data cubes into different formats)
 - Visual display of responses from server
-    
-## Test Cases
-
-The implemented test cases validate the functionality of the methods within the library.
-
-### Setup
-
-Each test initializes a connection to a WCPS server and sets up a Datacube instance allowing all tests to perform operations on this setup.
 
 ### Test methods
 
