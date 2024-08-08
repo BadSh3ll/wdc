@@ -1,0 +1,17 @@
+[project]
+name = "wdc"
+version = "0.0.1"
+authors = [
+  { name = "Ana and Thanh", email = "thienthanh04082002@gmail.com" },
+]
+description = "The wdc package is a streamlined tool designed to facilitate interactions with coverage datasets commonly used in geospatial data processing. By serving as an interface for Web Coverage Processing Service (WCPS) queries, wdc simplifies the access, retrieval, and manipulation of geospatial coverage datasets, enabling users to perform efficient data analysis with ease."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/iamthienthanh/wdc"
